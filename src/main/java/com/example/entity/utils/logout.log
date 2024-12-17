@@ -1,0 +1,23 @@
+2024-12-11T14:46:25.952+08:00  WARN 1376 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=18h43m54s970ms10?s600ns).
+2024-12-11T16:05:51.061+08:00  WARN 1376 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=53s552ms455?s900ns).
+2024-12-11T16:40:02.741+08:00  WARN 1376 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m11s182ms465?s200ns).
+2024-12-11T16:51:19.179+08:00  INFO 1376 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-11T16:51:19.198+08:00  INFO 1376 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-11T22:00:21.886+08:00  INFO 28700 --- [main] com.example.DemoApplication              : Starting DemoApplication using Java 17.0.10 with PID 28700 (D:\北京林业大学生活——本科（大二下开始）\数据库\实验\课程设计\正式课设（小组合作）\工作记录\代码工作——持久层\code\demo\demo\target\classes started by gyj in D:\北京林业大学生活——本科（大二下开始）\数据库\实验\课程设计\正式课设（小组合作）\工作记录\代码工作——持久层\code\demo\demo)
+2024-12-11T22:00:21.889+08:00  INFO 28700 --- [main] com.example.DemoApplication              : No active profile set, falling back to 1 default profile: "default"
+2024-12-11T22:00:22.779+08:00  INFO 28700 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8088 (http)
+2024-12-11T22:00:22.800+08:00  INFO 28700 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-11T22:00:22.800+08:00  INFO 28700 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-11T22:00:22.850+08:00  INFO 28700 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-11T22:00:22.851+08:00  INFO 28700 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 924 ms
+2024-12-11T22:00:23.326+08:00  INFO 28700 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8088 (http) with context path '/'
+2024-12-11T22:00:23.334+08:00  INFO 28700 --- [main] com.example.DemoApplication              : Started DemoApplication in 1.86 seconds (process running for 2.725)
+2024-12-11T22:03:34.059+08:00  INFO 32516 --- [main] com.example.DemoApplication              : Starting DemoApplication using Java 17.0.10 with PID 32516 (D:\北京林业大学生活——本科（大二下开始）\数据库\实验\课程设计\正式课设（小组合作）\工作记录\代码工作——持久层\code\demo\demo\target\classes started by gyj in D:\北京林业大学生活——本科（大二下开始）\数据库\实验\课程设计\正式课设（小组合作）\工作记录\代码工作——持久层\code\demo\demo)
+2024-12-11T22:03:34.062+08:00  INFO 32516 --- [main] com.example.DemoApplication              : No active profile set, falling back to 1 default profile: "default"
+2024-12-11T22:03:35.055+08:00  INFO 32516 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8088 (http)
+2024-12-11T22:03:35.070+08:00  INFO 32516 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-11T22:03:35.071+08:00  INFO 32516 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-11T22:03:35.117+08:00  INFO 32516 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-11T22:03:35.118+08:00  INFO 32516 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1005 ms
+2024-12-11T22:03:35.607+08:00  INFO 32516 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8088 (http) with context path '/'
+2024-12-11T22:03:35.616+08:00  INFO 32516 --- [main] com.example.DemoApplication              : Started DemoApplication in 1.99 seconds (process running for 2.65)
