@@ -1,11 +1,15 @@
 package com.example.controller;
 
+import com.example.entity.SubjectInfo;
 import com.example.entity.TutorInfo;
 import com.example.entity.utils.ResponseMessage;
 import com.example.service.IService.ITutorInfoService;
 import com.macro.mall.tiny.common.api.CommonResult;
+import io.swagger.v3.oas.annotations.Operation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/TutorInfo")
@@ -34,5 +38,14 @@ public class TutorInfoController {
         TutorInfo tutorToDelete = tutorInfoService.findTutorById(tutorId);
         tutorInfoService.deleteTutorInfo(tutorId);
         return ResponseMessage.success(tutorToDelete);
+    }
+
+    //查
+    @Operation(summary = "导师查询")
+    @GetMapping("/{subjectId}")
+    @ResponseBody
+    CommonResult<List<TutorInfo>> FindALL(@PathVariable Long subjectId){
+        List<TutorInfo> tutorInfoList=tutorInfoService.FindALL(subjectId);
+        return CommonResult.success(tutorInfoList);
     }
 }

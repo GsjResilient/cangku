@@ -3,6 +3,8 @@ package com.example.mapper;
 import com.example.entity.TutorInfo;
 import org.apache.ibatis.annotations.*;
 
+import java.util.List;
+
 @Mapper
 public interface TutorInfoMapper {
 
@@ -30,4 +32,6 @@ public interface TutorInfoMapper {
     // 根据 tutorId 删除导师信息
     @Delete("DELETE FROM TutorInfo WHERE tutorId = #{tutorId}")
     void deleteTutorInfo(Long tutorId);
+    @Select("CALL GetDistinctTutorsBySubjectId(#{subjectId})")
+    List<TutorInfo> FindALL(Long subjectId);
 }

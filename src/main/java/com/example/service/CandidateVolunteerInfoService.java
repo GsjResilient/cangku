@@ -39,8 +39,8 @@ public class CandidateVolunteerInfoService implements ICandidateVolunteerInfoSer
         if (newVolunteer.getVolunteerType() != null && !newVolunteer.getVolunteerType().equals(volunteerInDB.getVolunteerType())) {
             volunteerInDB.setVolunteerType(newVolunteer.getVolunteerType());
         }
-        if (newVolunteer.getName() != null && !newVolunteer.getName().equals(volunteerInDB.getName())) {
-            volunteerInDB.setName(newVolunteer.getName());
+        if (newVolunteer.getId() != null && !newVolunteer.getId().equals(volunteerInDB.getId())) {
+            volunteerInDB.setId(newVolunteer.getId());
         }
 
         candidateVolunteerInfoMapper.modifyVolunteerInfo(volunteerInDB);

@@ -3,6 +3,7 @@ package com.example.controller;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.example.entity.InterviewGroupInfo;
 import com.example.entity.utils.ResponseMessage;
+import com.example.entity.utils.dto.View_InterviewGroupDTO;
 import com.example.service.IService.IInterviewGroupInfoService;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
@@ -24,10 +25,10 @@ public class InterviewGroupInfoController {
     @Operation(summary ="获取所有复试小组信息")
     @RequestMapping(value = "/list", method = RequestMethod.GET)
     @ResponseBody
-    public CommonResult<PageInfo<InterviewGroupInfo>> findGroupAll(@RequestParam(value = "keyword", required = false) String keyword,
+    public CommonResult<PageInfo<View_InterviewGroupDTO>> findGroupAll(@RequestParam(value = "keyword", required = false) String keyword,
                                                                @RequestParam(value = "pageSize", defaultValue = "5") Integer pageSize,
                                                                @RequestParam(value = "pageNum", defaultValue = "1") Integer pageNum) {
-        PageInfo<InterviewGroupInfo> groups = interviewGroupInfoService.findGroupAll(keyword,pageSize, pageNum);
+        PageInfo<View_InterviewGroupDTO> groups = interviewGroupInfoService.findGroupAll(keyword,pageSize, pageNum);
         return CommonResult.success(groups);
     }
     @GetMapping("/{groupId}")

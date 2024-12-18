@@ -6,10 +6,17 @@ import com.example.service.IService.ITutorInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class TutorInfoService implements ITutorInfoService {
     @Autowired
     TutorInfoMapper tutorInfoMapper;
+
+    @Override
+    public List<TutorInfo> FindALL(Long subjectId) {
+        return tutorInfoMapper.FindALL(subjectId);
+    }
 
     @Override
     public TutorInfo findTutorById(Long tutorId) {

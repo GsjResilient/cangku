@@ -5,7 +5,18 @@ public class CandidateVolunteerInfo {
     private Long candidateId;       // 考生ID，关联 CandidateInfo
     private Integer volunteerOrder; // 志愿顺序
     private String volunteerType;   // 志愿类型
-    private String name;   // 方向名称
+    private Long id;
+
+    @Override
+    public String toString() {
+        return "CandidateVolunteerInfo{" +
+                "volunteerId=" + volunteerId +
+                ", candidateId=" + candidateId +
+                ", volunteerOrder=" + volunteerOrder +
+                ", volunteerType='" + volunteerType + '\'' +
+                ", id=" + id +
+                '}';
+    }
 
     public Long getVolunteerId() {
         return volunteerId;
@@ -39,23 +50,12 @@ public class CandidateVolunteerInfo {
         this.volunteerType = volunteerType;
     }
 
-    public String getName() {
-        return name;
+    public Long getId() {
+        return id;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    @Override
-    public String toString() {
-        return "CandidateVolunteerInfo{" +
-                "volunteerId=" + volunteerId +
-                ", candidateId=" + candidateId +
-                ", volunteerOrder=" + volunteerOrder +
-                ", volunteerType='" + volunteerType + '\'' +
-                ", name='" + name + '\'' +
-                '}';
+    public void setId(Long id) {
+        this.id = id;
     }
 }
 

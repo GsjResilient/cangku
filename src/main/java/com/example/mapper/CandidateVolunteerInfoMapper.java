@@ -14,14 +14,14 @@ public interface CandidateVolunteerInfoMapper {
             "    candidateId, " +
             "    volunteerOrder, " +
             "    volunteerType, " +
-            "    name" +
+            "    id" +
             ") " +
             "VALUES " +
             "(" +
             "    #{candidateId}, " +
             "    #{volunteerOrder}, " +
             "    #{volunteerType}, " +
-            "    #{name}" +
+            "    #{id}" +
             ")")
     @Options(useGeneratedKeys = true, keyProperty = "volunteerId")
     void addNewVolunteer(CandidateVolunteerInfo volunteer);

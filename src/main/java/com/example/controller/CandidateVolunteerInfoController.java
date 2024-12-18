@@ -32,16 +32,4 @@ public class CandidateVolunteerInfoController {
         return CommonResult.success(newVolunteer);
     }
 
-    @PutMapping
-    public ResponseMessage modifyVolunteerInfo(@RequestBody CandidateVolunteerInfo volunteer) {
-        CandidateVolunteerInfo updatedVolunteer = candidateVolunteerDirectionService.modifyVolunteerInfo(volunteer);
-        return ResponseMessage.success(updatedVolunteer);
-    }
-
-    @DeleteMapping("/{volunteerId}")
-    public ResponseMessage deleteVolunteerById(@PathVariable Long volunteerId) {
-        CandidateVolunteerInfo volunteerToDelete = candidateVolunteerDirectionService.findVolunteerById(volunteerId);
-        candidateVolunteerDirectionService.deleteVolunteerById(volunteerId);
-        return ResponseMessage.success(volunteerToDelete);
-    }
 }
